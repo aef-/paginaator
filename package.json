@@ -1,6 +1,6 @@
 {
   "name": "paginator",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Smartly generates an array of pages",
   "main": "build/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "rollup src/index.js --file build/index.js --format umd --name 'paginator'",
     "dev": "npm t -- --watch"
   },
-  "author": "",
+  "author": "aef-",
   "license": "MIT",
   "devDependencies": {
     "babel-preset-env": "^1.7.0",
