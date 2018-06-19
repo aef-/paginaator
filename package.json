@@ -1,0 +1,21 @@
+{
+  "name": "paginator",
+  "version": "1.0.0",
+  "description": "Smartly generates an array of pages",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "mocha tests/* --require babel-register",
+    "build": "rollup src/index.js --file build/index.js --format umd --name 'paginator'",
+    "dev": "npm t -- --watch"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.17.5",
+    "rollup": "^0.60.7",
+    "snap-shot-it": "^5.0.1"
+  }
+}
