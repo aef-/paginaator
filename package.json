@@ -1,11 +1,11 @@
 {
-  "name": "paginator",
+  "name": "paginaator",
   "version": "0.0.1",
   "description": "Smartly generates an array of pages",
   "main": "build/index.js",
   "scripts": {
     "test": "mocha tests/* --require babel-register",
-    "build": "rollup src/index.js --file build/index.js --format umd --name 'paginator'",
+    "build": "rollup src/index.js --file build/index.js --format umd --name 'paginaator'",
     "dev": "npm t -- --watch"
   },
   "author": "aef-",
