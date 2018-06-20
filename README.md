@@ -4,17 +4,18 @@ Tiny, smart pagination generator
 ## Example
 For an exhaustive list see [snapshots](https://github.com/aef-/paginator.js/blob/master/__snapshots__/paginator.js).
 
-Vanilla JS or JSX or whatever you want! Works in browser and Node.js
+Vanilla JS or JSX or whatever you want! Works in browser and Node.js. There are a lot of ways to do the following, this is just one...
 ```js
 import paginator from 'paginator';
 
-paginator({
+const pages = paginator({
   current: parseInt(getQueryParam("currentPage"), 10) || 1,
   totalPages: 10,
   render: v => isNaN(v) ? `<span>${v}</span>` : `<a href="?currentPage=${v}">${v}</a>`
 });
-//
-[<a href="?currentPage=1">1</a>, <a href="?currentPage=2>2</a>, <a href="?currentPage=3">3</a>, ..., <a href="?currentPage=10">10</a>] 
+
+console.info(pages);
+// ['<a href="?currentPage=1">1</a>', '<a href="?currentPage=2>2</a>', '<a href="?currentPage=3">3</a>', '<span>...</span>', '<a href="?currentPage=10">10</a>'] 
 ```
 
 ## Options
